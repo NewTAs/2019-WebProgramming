@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            나의 소개
+        </title>
+
+        <style>
+            h3 {
+                text-align : center;
+                color : darkred;
+            }
+            hr {
+                height: 7px;
+                border: solid powderblue;
+                background-color: royalblue;
+            }
+            body {
+                background-color : darkseagreen;
+                color : black;
+                margin-left : 40px;
+                margin-right : 40px;
+            }
+            span1 {
+                color : darkred;
+                font-size : 20px;
+            }
+            span2 {
+                color : firebrick;
+                font-size : 20px;
+            }
+        </style>
+
+        <script>
+            function show() { document.getElementById("fig").src = "L000003008678_1_640.png"; }
+            function hide() { document.getElementById("fig").src = ""; }
+        </script>
+    </head>
+
+    <body>
+        <h3 onmouseover="show()" onmouseout="hide()">
+            201804037 황재민 소개
+        </h3>
+        <hr>
+        <div><img id="fig" src="" /></div>
+        <p>
+        저는 <span1>경기도 고양시</span1>에서 태어났으며, 현재 컴퓨터 소프트웨어를 전공하는 학생입니다.<br>
+        또한 기숙사 생활을 하고 있으며, 현재 <span2>WE:路 찬양팀</span2>에서 드럼으로 섬기고 있습니다.
+        </p>
+    </body>
+</html>
