@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<html>
+    <head>
+        <title>편리한 숫자 입력</title>
+    </head>
+
+    <body>
+        <h3>홈 제어 시스템 - 온도 조절</h3>
+        <hr />
+        <form>
+            지속 시간(0.0 ~ 10.0 시간) :
+            <input type="number" min="0.0" max="30" list="temperatures" />30&deg;
+            <datalist id="temperatures">
+                <option value="12" label="Low"></option>
+                <option value="20" label="Medium"></option>
+                <option value="28" label="High"></option>
+            </datalist>
+        </form>
+    </body>
+</html>
