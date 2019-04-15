@@ -1,0 +1,23 @@
+﻿h3, li {
+    color : brown;
+}
+
+.warning {
+    color : red;
+}
+
+body.main {
+    background : aliceblue;
+}
+
+#list {
+    background : mistyrose;
+}
+
+ul strong { /* 자손 셀렉터: ul의 자손 strong에 적용 */
+    color : dodgerblue;
+}
+
+div > strong { /* 자식 셀렉터: div의 자식 strong에 적용 */
+    background : yellow;
+}
