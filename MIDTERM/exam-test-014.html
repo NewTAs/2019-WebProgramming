@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<html>
+    <head>
+        <title>도형 서식 폼 만들기</title>
+    </head>
+
+    <body>
+        <fieldset>
+            <legend>도형 서식 입력</legend>
+            선종류
+            <select name="linetype">
+                <option value="1">선 없음</option>
+                <option value="2">실선</option>
+                <option value="3">점선</option>
+            </select>
+            <br />
+            선두께 <input type="number" min="0" max="100" step="0.5"/>
+            선 색 <input type="color" value="#FFF000" onchange="document.body.style.color=this.value" />
+            <br />
+            투명도(0~100) <input type="range" max="100" min="0"/>
+        </fieldset>
+    </body>
+</html>
