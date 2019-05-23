@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>암호 입력</title>
+        <script>
+            function secret(n) {
+                if (n != "you") {
+                    alert("잘못 입력하셨습니다.");
+                    return;
+                }
+                document.write("통과!");
+            }
+        </script>
+    </head>
+
+    <body>
+        <h3>암호를 입력하라!</h3>
+        <hr />
+        <script>
+            var n = prompt("암호를 대라", "");
+            secret(n);
+        </script>
+    </body>
+</html>
