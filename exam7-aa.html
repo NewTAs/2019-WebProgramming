@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Book 객체 만들기</title>
+    <script>
+	// 프로토타입 만들기 : 생성자 함수 작성
+	function Account(title, author, price) {
+		// 프로퍼티 만들기
+		this.title = title;
+		this.author = author;
+		this.price = price;
+
+		// 메소드 만들기
+		this.inquiry = function () { return this.balance; }
+	}
+    </script>
+</head>
+<body>
+    <h3>Account 프로토타입 만들기</h3>
+    <hr>
+    <script>
+	// new 연산자 이용하여 계좌 객체 생성
+        var account = new Account("HTML5", "황기태", 20000);
+
+	// 객체 활용
+	document.write("Book : ");
+	document.write(account.title + ", ");
+	document.write(account.author + ", ");
+	document.write(account.price + "<br>");
+    </script>
+</body>
+</html>
